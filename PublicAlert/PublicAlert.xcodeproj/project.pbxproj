@@ -15,6 +15,7 @@
 		3957309B1FDE526900DFC6AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3957309A1FDE526900DFC6AB /* main.m */; };
 		395730A51FDE526900DFC6AB /* PublicAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395730A41FDE526900DFC6AB /* PublicAlertTests.m */; };
 		395730B01FDE526900DFC6AB /* PublicAlertUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395730AF1FDE526900DFC6AB /* PublicAlertUITests.m */; };
+		395730C11FDE601C00DFC6AB /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 395730C01FDE601C00DFC6AB /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		395730AB1FDE526900DFC6AB /* PublicAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PublicAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		395730AF1FDE526900DFC6AB /* PublicAlertUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicAlertUITests.m; sourceTree = "<group>"; };
 		395730B11FDE526A00DFC6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395730BF1FDE601C00DFC6AB /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		395730C01FDE601C00DFC6AB /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		3957308A1FDE526900DFC6AB /* PublicAlert */ = {
 			isa = PBXGroup;
 			children = (
+				395730BE1FDE5DEB00DFC6AB /* Cataory */,
 				3957308B1FDE526900DFC6AB /* AppDelegate.h */,
 				3957308C1FDE526900DFC6AB /* AppDelegate.m */,
 				3957308E1FDE526900DFC6AB /* ViewController.h */,
@@ -130,6 +134,15 @@
 				395730B11FDE526A00DFC6AB /* Info.plist */,
 			);
 			path = PublicAlertUITests;
+			sourceTree = "<group>";
+		};
+		395730BE1FDE5DEB00DFC6AB /* Cataory */ = {
+			isa = PBXGroup;
+			children = (
+				395730BF1FDE601C00DFC6AB /* UIView+Extension.h */,
+				395730C01FDE601C00DFC6AB /* UIView+Extension.m */,
+			);
+			path = Cataory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +280,7 @@
 			files = (
 				395730901FDE526900DFC6AB /* ViewController.m in Sources */,
 				3957309B1FDE526900DFC6AB /* main.m in Sources */,
+				395730C11FDE601C00DFC6AB /* UIView+Extension.m in Sources */,
 				3957308D1FDE526900DFC6AB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,7 +35,7 @@
     UIButton *btn3 = [UIButton new];
     [btn3 setTitle:@"三个按钮的弹框" forState:UIControlStateNormal];
     btn3.backgroundColor = [UIColor grayColor];
-    btn2.tag = 3;
+    btn3.tag = 3;
     [btn3 sizeToFit];
     btn3.y = CGRectGetMaxY(btn2.frame) + 10;
     
@@ -61,13 +61,45 @@
 
 -(void)clickBtn:(UIButton *)btn{
     if (btn.tag == 1) {
-        
+        [PublicAlertViewController showAlertWithTitle:@"温馨提示" message:@"一个按钮" cancelTitle:nil otherTitles:@[@"确定"] contentView:nil completion:^(NSInteger buttonIndex) {
+            if (buttonIndex == 0) {
+                NSLog(@"按钮一");
+            }
+            
+        }];
     }else if (btn.tag == 2){
+        [PublicAlertViewController showAlertWithTitle:@"温馨提示" message:@"两个个按钮" cancelTitle:nil otherTitles:@[@"确定",@"取消"] contentView:nil completion:^(NSInteger buttonIndex) {
+            if (buttonIndex == 0) {
+                NSLog(@"点击确定按钮");
+            }else if (buttonIndex == 1){
+                NSLog(@"点击取消按钮");
+            }
+        }];
         
     }else if (btn.tag == 3){
         
-    }else if (btn.tag == 4){
+        [PublicAlertViewController showAlertWithTitle:@"温馨提示" message:@"三个个按钮" cancelTitle:nil otherTitles:@[@"按钮一",@"按钮二",@"按钮三"] contentView:nil completion:^(NSInteger buttonIndex) {
+            if (buttonIndex == 0) {
+                NSLog(@"点击按钮one");
+            }else if (buttonIndex == 1){
+                NSLog(@"点击按钮two");
+            }else if (buttonIndex == 2){
+                NSLog(@"点击按钮three");
+            }
+        }];
         
+    }else if (btn.tag == 4){
+        [PublicAlertViewController showAlertWithTitle:@"温馨提示" message:@"四个个按钮" cancelTitle:nil otherTitles:@[@"按钮一",@"按钮二",@"按钮三",@"按钮四"] contentView:nil completion:^(NSInteger buttonIndex) {
+            if (buttonIndex == 0) {
+                NSLog(@"点击按钮one");
+            }else if (buttonIndex == 1){
+                NSLog(@"点击按钮two");
+            }else if (buttonIndex == 2){
+                NSLog(@"点击按钮three");
+            }else if (buttonIndex == 3){
+                NSLog(@"点击按钮four");
+            }
+        }];
     }
 }
 - (void)didReceiveMemoryWarning {

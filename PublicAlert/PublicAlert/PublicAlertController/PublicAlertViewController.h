@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#define MainTabBarColor [UIColor colorWithRed:(0x10 / 255.0) green:(0xb4 / 255.0) blue:(0x87 / 255.0) alpha:1.0]
 
 typedef void(^PublicAlertViewCompletionBlock)(NSInteger buttonIndex);
 

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "UIView+Extension.h"
-
+#import "PublicAlertViewController.h"
 @interface ViewController ()
 
 @end

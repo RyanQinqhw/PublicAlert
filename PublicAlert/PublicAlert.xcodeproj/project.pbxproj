@@ -16,6 +16,8 @@
 		395730A51FDE526900DFC6AB /* PublicAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395730A41FDE526900DFC6AB /* PublicAlertTests.m */; };
 		395730B01FDE526900DFC6AB /* PublicAlertUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395730AF1FDE526900DFC6AB /* PublicAlertUITests.m */; };
 		395730C11FDE601C00DFC6AB /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 395730C01FDE601C00DFC6AB /* UIView+Extension.m */; };
+		395730C71FDE68DB00DFC6AB /* PublicAlertViewStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 395730C31FDE68DB00DFC6AB /* PublicAlertViewStack.m */; };
+		395730C81FDE68DB00DFC6AB /* PublicAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395730C41FDE68DB00DFC6AB /* PublicAlertViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		395730B11FDE526A00DFC6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		395730BF1FDE601C00DFC6AB /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		395730C01FDE601C00DFC6AB /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		395730C31FDE68DB00DFC6AB /* PublicAlertViewStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicAlertViewStack.m; sourceTree = "<group>"; };
+		395730C41FDE68DB00DFC6AB /* PublicAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicAlertViewController.m; sourceTree = "<group>"; };
+		395730C51FDE68DB00DFC6AB /* PublicAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicAlertViewController.h; sourceTree = "<group>"; };
+		395730C61FDE68DB00DFC6AB /* PublicAlertViewStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicAlertViewStack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		3957308A1FDE526900DFC6AB /* PublicAlert */ = {
 			isa = PBXGroup;
 			children = (
+				395730C21FDE68DB00DFC6AB /* PublicAlertController */,
 				395730BE1FDE5DEB00DFC6AB /* Cataory */,
 				3957308B1FDE526900DFC6AB /* AppDelegate.h */,
 				3957308C1FDE526900DFC6AB /* AppDelegate.m */,
@@ -143,6 +150,17 @@
 				395730C01FDE601C00DFC6AB /* UIView+Extension.m */,
 			);
 			path = Cataory;
+			sourceTree = "<group>";
+		};
+		395730C21FDE68DB00DFC6AB /* PublicAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				395730C31FDE68DB00DFC6AB /* PublicAlertViewStack.m */,
+				395730C41FDE68DB00DFC6AB /* PublicAlertViewController.m */,
+				395730C51FDE68DB00DFC6AB /* PublicAlertViewController.h */,
+				395730C61FDE68DB00DFC6AB /* PublicAlertViewStack.h */,
+			);
+			path = PublicAlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395730C81FDE68DB00DFC6AB /* PublicAlertViewController.m in Sources */,
 				395730901FDE526900DFC6AB /* ViewController.m in Sources */,
+				395730C71FDE68DB00DFC6AB /* PublicAlertViewStack.m in Sources */,
 				3957309B1FDE526900DFC6AB /* main.m in Sources */,
 				395730C11FDE601C00DFC6AB /* UIView+Extension.m in Sources */,
 				3957308D1FDE526900DFC6AB /* AppDelegate.m in Sources */,
